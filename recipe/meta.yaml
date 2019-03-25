@@ -16,7 +16,7 @@ build:
   script:
     - rm $PREFIX/include/cblas.h      # [not win]
     - del /f %LIBRARY_INC%\cblas.h    # [win]
-    - python -m pip install --no-deps --ignore-installed .  -vv
+    - python setup.py install
 
 requirements:
   build:
